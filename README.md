@@ -52,7 +52,7 @@ Planning      Memory       Vision
          Execution Agent
                   │
                   ▼
-          Tool Registry
+     Tool Registry & Adapters
                   │
  ┌─────────┬─────────┬─────────┬─────────┐
  │ Browser │ Files   │Terminal │ OpenCV │
@@ -126,6 +126,7 @@ React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithm
 
 - Node.js
 - Express.js
+- Fast API
 
 ### Database
 
@@ -139,7 +140,6 @@ React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithm
 
 ### AI / ML
 
-- FastAPI
 - LangGraph
 - OpenCV
 
