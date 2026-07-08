@@ -32,23 +32,33 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems today, with future support for robotics and edge AI.
 
-                User
-                  │
-      Natural Language Goal
-                  │
-          Planner Agent
-                  │
-     ┌────────┼─────────┐
-     │        │         │
- Vision    Memory   Execution
-     │        │         │
-     └────────┼─────────┘
-              │
-      Tool Orchestrator
-              │
- Browser • Files • Terminal • APIs
-              │
-     Future Robotics Adapters
+## Architecture
+
+## Architecture
+
+```text
+                   User
+                    │
+      Natural Language Request
+                    │
+          Agent Orchestrator
+                    │
+      ┌─────────────┼─────────────┐
+      │             │             │
+ Planner      Memory Manager   Vision
+      │             │             │
+      └─────────────┼─────────────┘
+                    │
+            Execution Engine
+                    │
+         Tool Registry / Skills
+                    │
+ ┌────────┬────────┬────────┬────────┐
+ │Browser │Terminal│ OpenCV │ Files  │
+ └────────┴────────┴────────┴────────┘
+                    │
+     Future Adapters (ROS2, Gazebo)
+```
 
 ## Key Features
 
