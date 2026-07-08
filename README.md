@@ -68,7 +68,7 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
 
 ## Architecture
 
-```text
+-
                  User
                    │
         Natural Language Instruction
@@ -88,7 +88,7 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
  └────────┴─────────┴─────────┴─────────┘
                    │
       Future Adapters (ROS2 / Gazebo)
-```
+
 
 ---
 
