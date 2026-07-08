@@ -30,18 +30,19 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ### SkillForge
 
-SkillForge is a distributed Agentic AI runtime that abstracts the capabilities of robots, sensors, hardware interfaces, and software services into reusable modular skills, making autonomous systems easier to build and scale.
+SkillForge is an extensible Agentic AI runtime that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions.
 
-**Key Features**
+## Key Features
 
-- Multi-agent architecture with Planning, Vision, Navigation, and Execution agents
-- Natural language task execution powered by LLMs
-- Distributed orchestration across multiple Snapdragon-powered devices
-- Computer vision integration using OpenCV
-- Modular robotic skill composition and execution
-- Hardware interaction through Arduino UNO Q
-- Simulation-to-real deployment using Gazebo
-- Low-latency edge AI execution using Snapdragon AI Hub
+- Multi-agent architecture comprising **Planning, Vision, Memory, and Execution** agents
+- Natural-language task execution powered by Large Language Models (LLMs)
+- Modular tool execution framework for Filesystem, Browser, Terminal, and external APIs
+- Event-driven workflow orchestration with reusable agent skills
+- Computer vision support using OpenCV
+- Browser automation for autonomous web interactions
+- Extensible adapter system for simulation and future robotics integration
+- Distributed runtime designed for scalable agent orchestration
+
 
 **Tech Stack**
 
@@ -65,9 +66,42 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
 - Role-based dashboards for Admin, Teacher, and Student
 - Designed for seamless ERP integration
 
-**Tech Stack**
+## Architecture
 
-React.js • Node.js • Express.js • MongoDB • JavaScript • Genetic Algorithm • Greedy Algorithm
+```text
+                 User
+                   │
+        Natural Language Instruction
+                   │
+            Planner Agent
+                   │
+      ┌────────────┼────────────┐
+      │            │            │
+ Vision Agent  Memory Agent  Execution Agent
+      │            │            │
+      └────────────┼────────────┘
+                   │
+          Tool Orchestrator
+                   │
+ ┌────────┬─────────┬─────────┬─────────┐
+ │Browser │Terminal │OpenCV   │Files/API│
+ └────────┴─────────┴─────────┴─────────┘
+                   │
+      Future Adapters (ROS2 / Gazebo)
+```
+
+---
+
+## Tech Stack
+
+### Current
+
+- Python
+- FastAPI
+- LangGraph
+- OpenCV
+- Docker
+- Git
 
 🔗 **Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync)
 
