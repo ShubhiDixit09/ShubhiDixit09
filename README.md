@@ -34,30 +34,32 @@ SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized
 
 ## Architecture
 
-## Architecture
-
 ```text
-                   User
-                    │
+                User
+                  │
+                  ▼
       Natural Language Request
-                    │
-          Agent Orchestrator
-                    │
-      ┌─────────────┼─────────────┐
-      │             │             │
- Planner      Memory Manager   Vision
-      │             │             │
-      └─────────────┼─────────────┘
-                    │
-            Execution Engine
-                    │
-         Tool Registry / Skills
-                    │
- ┌────────┬────────┬────────┬────────┐
- │Browser │Terminal│ OpenCV │ Files  │
- └────────┴────────┴────────┴────────┘
-                    │
-     Future Adapters (ROS2, Gazebo)
+                  │
+                  ▼
+        Agent Orchestrator
+                  │
+     ┌────────────┼────────────┐
+     ▼            ▼            ▼
+ Planner      Memory       Vision
+     │            │            │
+     └────────────┼────────────┘
+                  ▼
+          Execution Engine
+                  │
+                  ▼
+           Tool Registry 
+                  │
+ ┌─────────┬─────────┬─────────┬─────────┐
+ │ Browser │ Files   │Terminal │ OpenCV │
+ └─────────┴─────────┴─────────┴─────────┘
+                  │
+                  ▼
+ Future Adapters (ROS2 • Gazebo • Edge AI)
 ```
 
 ## Key Features
