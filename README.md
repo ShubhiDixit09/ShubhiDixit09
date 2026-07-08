@@ -102,14 +102,7 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
 
 ## Tech Stack
 
-### Current
-
-- Python
-- FastAPI
-- LangGraph
-- OpenCV
-- Docker
-- Git
+React.js • Node.js • Express.js • MongoDB • JavaScript • Genetic Algorithm • Greedy Algorithm
 
 🔗 **Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync)
 
@@ -161,7 +154,7 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 - **LeetCode:** Solved **60+ DSA Problems**
 - **Codeforces:** Newbie *(10+ Problems Solved)*
 
-### 🏆 Achievements
+## 🏆 Achievements
 
 - **99.08 Percentile** in JEE Main
 - **Qualified JEE Advanced**
@@ -169,7 +162,7 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 - **2nd Place** – State-Level Mental Mathematics Competition *(₹10,500 Cash Prize)*
 - **Rank 12** – MVPP Delhi State Scholarship Examination among **20,000+ participants** *(₹5,000 Scholarship)*
 
-## 📚 Currently Working On
+### 📚 Currently Working On
 
 - Building **SkillForge**, exploring distributed multi-agent systems for robotics and edge AI.
 - Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
