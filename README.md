@@ -100,32 +100,6 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
 - Role-based dashboards for Admin, Teacher, and Student
 - Designed for seamless ERP integration
 
-## Architecture
-
--
-                 User
-                   │
-        Natural Language Instruction
-                   │
-            Planner Agent
-                   │
-      ┌────────────┼────────────┐
-      │            │            │
- Vision Agent  Memory Agent  Execution Agent
-      │            │            │
-      └────────────┼────────────┘
-                   │
-          Tool Orchestrator
-                   │
- ┌────────┬─────────┬─────────┬─────────┐
- │Browser │Terminal │OpenCV   │Files/API│
- └────────┴─────────┴─────────┴─────────┘
-                   │
-      Future Adapters (ROS2 / Gazebo)
-
-
----
-
 ## Tech Stack
 
 ### Current
