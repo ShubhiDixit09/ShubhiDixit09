@@ -30,14 +30,32 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ### SkillForge
 
-SkillForge is an extensible Agentic AI runtime that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions.
+SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems today, with future support for robotics and edge AI.
+
+                User
+                  │
+      Natural Language Goal
+                  │
+          Planner Agent
+                  │
+     ┌────────┼─────────┐
+     │        │         │
+ Vision    Memory   Execution
+     │        │         │
+     └────────┼─────────┘
+              │
+      Tool Orchestrator
+              │
+ Browser • Files • Terminal • APIs
+              │
+     Future Robotics Adapters
 
 ## Key Features
 
 - Multi-agent architecture comprising **Planning, Vision, Memory, and Execution** agents
 - Natural-language task execution powered by Large Language Models (LLMs)
 - Modular tool execution framework for Filesystem, Browser, Terminal, and external APIs
-- Event-driven workflow orchestration with reusable agent skills
+- Event-driven workflow orchestration with reusable AI skills
 - Computer vision support using OpenCV
 - Browser automation for autonomous web interactions
 - Extensible adapter system for simulation and future robotics integration
@@ -46,7 +64,11 @@ SkillForge is an extensible Agentic AI runtime that orchestrates specialized AI 
 
 **Tech Stack**
 
-Python • FastAPI • LangGraph • ROS2 • OpenCV • Snapdragon AI Hub • Arduino UNO Q • Gazebo • Git
+Python • FastAPI • LangGraph • OpenCV • Docker • Git
+
+### Planned Integrations
+
+ROS2 • Gazebo • Playwright • PostgreSQL • Redis • YOLOv8
 
 🔗 **Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge)
 
