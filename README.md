@@ -160,6 +160,8 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 - **LeetCode:** **60+ Problems Solved**
 - **Codeforces:** Newbie *(10+ Problems Solved)*
 
+---
+
 ## 🏆 Achievements
 
 - **99.08 Percentile** in JEE Main
@@ -167,6 +169,8 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 - **1st Place** – Guessapalooza, IEEE DTU INVICTUS Annual Technical Fest *(₹3,000 Cash Prize)*
 - **2nd Place** – State-Level Mental Mathematics Competition *(₹10,500 Cash Prize)*
 - **Rank 12** – MVPP Delhi State Scholarship Examination among **20,000+ participants** *(₹5,000 Scholarship)*
+
+---
 
 ### 📚 Currently Working On
 
