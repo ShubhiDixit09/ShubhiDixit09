@@ -8,7 +8,7 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ### Areas of Interest
 
-**Artificial Intelligence**
+**Artificial Intelligence & Machine Learning**
 - Machine Learning
 - Deep Learning
 - Retrieval-Augmented Generation (RAG)
@@ -30,7 +30,7 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ### SkillForge
 
-SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems today, with future support for robotics and edge AI.
+SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems, with an extensible architecture for future robotics and edge AI integration.
 
 ## Architecture
 
@@ -45,21 +45,21 @@ SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized
                   │
      ┌────────────┼────────────┐
      ▼            ▼            ▼
- Planner      Memory       Vision
-     │            │            │
+Planning      Memory       Vision
+  Agent        Agent        Agent
      └────────────┼────────────┘
                   ▼
-          Execution Engine
+         Execution Agent
                   │
                   ▼
-           Tool Registry 
+          Tool Registry
                   │
  ┌─────────┬─────────┬─────────┬─────────┐
  │ Browser │ Files   │Terminal │ OpenCV │
  └─────────┴─────────┴─────────┴─────────┘
                   │
                   ▼
- Future Adapters (ROS2 • Gazebo • Edge AI)
+ Simulation & Robotics Adapters
 ```
 
 ## Key Features
@@ -82,7 +82,7 @@ Python • FastAPI • LangGraph • OpenCV • Docker • Git
 
 ROS2 • Gazebo • Playwright • PostgreSQL • Redis • YOLOv8
 
-🔗 **Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge)
+Status: 🚧 Active Development
 
 ---
 
@@ -102,7 +102,7 @@ ChronoSync is an intelligent timetable scheduling platform for universities that
 
 ## Tech Stack
 
-React.js • Node.js • Express.js • MongoDB • JavaScript • Genetic Algorithm • Greedy Algorithm
+React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithms • Greedy Optimization
 
 🔗 **Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync)
 
@@ -137,6 +137,12 @@ React.js • Node.js • Express.js • MongoDB • JavaScript • Genetic Algor
 - Object-Oriented Programming
 - Operating Systems
 
+### AI / ML
+
+- FastAPI
+- LangGraph
+- OpenCV
+
 ### Tools & Platforms
 
 - Git
@@ -151,7 +157,7 @@ React.js • Node.js • Express.js • MongoDB • JavaScript • Genetic Algor
 ## Competitive Programming
 
 I regularly practice Competitive Programming to strengthen problem-solving, algorithmic thinking, and the ability to design efficient algorithms under time constraints.
-- **LeetCode:** Solved **60+ DSA Problems**
+- **LeetCode:** **60+ Problems Solved**
 - **Codeforces:** Newbie *(10+ Problems Solved)*
 
 ## 🏆 Achievements
@@ -164,7 +170,7 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 
 ### 📚 Currently Working On
 
-- Building **SkillForge**, exploring distributed multi-agent systems for robotics and edge AI.
+- Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation with future robotics support.
 - Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
 - Exploring **ROS2, Computer Vision, LangGraph, and Snapdragon AI technologies** for intelligent autonomous systems.
 - Strengthening problem-solving skills through Data Structures & Algorithms and Competitive Programming.
