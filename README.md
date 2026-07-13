@@ -157,7 +157,7 @@ React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithm
 ## Competitive Programming
 
 I regularly practice Competitive Programming to strengthen problem-solving, algorithmic thinking, and the ability to design efficient algorithms under time constraints.
-- **LeetCode:** **60+ Problems Solved**
+- **LeetCode:** **75+ Problems Solved**
 - **Codeforces:** Newbie *(10+ Problems Solved)*
 
 ---
