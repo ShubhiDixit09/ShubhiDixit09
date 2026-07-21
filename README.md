@@ -28,6 +28,29 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ## 🚀 Projects
 
+### NyayaBot
+
+NyayaBot is a **100% on-device, zero-cloud legal action engine** built for Track 1: AI for Legal Assistance at the Google "Build with Gemma" hackathon (AIMS-DTU), helping citizens navigate legal processes without sending private grievances to a cloud server. Built with a teammate.
+
+**Key Features**
+
+- Runs entirely on-device on **Gemma 4** via Ollama using Per-Layer Embeddings, keeping inference under 6GB VRAM with zero cloud dependency
+- Hinglish processing engine that maps conversational, code-mixed input directly to statutory intent
+- Vision notice parser that extracts fine, deadline, and issuing authority straight from a photographed legal notice — no OCR chain
+- Hierarchical RAG pipeline over ChromaDB that retrieves the relevant Act before narrowing to the exact Section
+- Custom guardrail layer (**ShieldAI**) enforcing citation verification and output safety checks to prevent hallucinated legal answers
+- ReAct-loop workflow orchestrator coordinating 8 tools (statutory search, document drafting, citation verification) over a 13-table SQLite schema with SQL-level compare-and-swap concurrency and idempotency-key validation for atomic, conflict-safe case writes
+
+**Tech Stack**
+
+Python • TypeScript • React • Gemma 4 • Ollama • ChromaDB • SQLite
+
+🔗 **Repository:** [Gemma-AIMS](https://github.com/ShubhiDixit09/Gemma-AIMS)
+
+Status: 🏆 Built with Gemma — AIMS-DTU Hackathon (Track 1: AI for Legal Assistance)
+
+---
+
 ### SkillForge
 
 SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems, with an extensible architecture for future robotics and edge AI integration.
@@ -157,7 +180,7 @@ React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithm
 ## Competitive Programming
 
 I regularly practice Competitive Programming to strengthen problem-solving, algorithmic thinking, and the ability to design efficient algorithms under time constraints.
-- **LeetCode:** **75+ Problems Solved**
+- **LeetCode:** **90+ Problems Solved**
 - **Codeforces:** Newbie *(10+ Problems Solved)*
 
 ---
