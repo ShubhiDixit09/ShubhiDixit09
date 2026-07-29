@@ -96,9 +96,9 @@ flowchart LR
 
 ### **Tech Stack**
 
-React • TypeScript• Python• FastAPI • SQLite• TF-IDF • Ollama • &Gemma • ReportLab • Pytest
+React • TypeScript• Python• FastAPI • SQLite• TF-IDF • Ollama • Gemma • ReportLab • Pytest
 
-**Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
+Build with Gemma Hackathon, AIMS-DTU
 
 **Repository:** [NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
 
