@@ -12,25 +12,25 @@ I enjoy building systems where AI and algorithms produce real, verifiable outcom
 
 ---
 
-### [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated) — Agentic AI Runtime
-<br>
+## **SkillForge — Agentic AI Runtime**
+
 A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
-<br>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ShubhiDixit09/SkillForge-updated/main/skillforge-dashboard.png" alt="SkillForge execution dashboard" width="75%">
 </p>
 
-**Workflow:**
-`Next.js Dashboard → FastAPI → LangGraph Orchestrator → Specialised Agents → Bounded Tools → Verification → SQLite + Live SSE Events`
+### **Workflow**
 
-* Models each task as a stateful **plan → execute → verify** workflow instead of returning a single chatbot response.
-* Routes steps across planning, coding, file, memory, execution and verification roles through central agent and tool registries.
-* Executes workspace inspection, safe file reads, Git status, memory search and allow-listed test commands through a permissioned executor.
-* Prevents path traversal and unrestricted shell access using workspace boundaries, command allow-lists, timeouts and output limits.
-* Streams persisted workflow events to the dashboard using **Server-Sent Events**, making every step, failure and result observable.
-* Works immediately in deterministic zero-key mode, with optional local **Gemma through Ollama** for evidence-grounded final synthesis.
-* Redesigned from an initially hardware-dependent robotics system into an environment-independent runtime; ROS2, Gazebo and physical devices remain future adapters.
+`Next.js Dashboard` &nbsp;&nbsp;→&nbsp;&nbsp; `FastAPI` &nbsp;&nbsp;→&nbsp;&nbsp; `LangGraph Orchestrator` &nbsp;&nbsp;→&nbsp;&nbsp; `Specialised Agents` &nbsp;&nbsp;→&nbsp;&nbsp; `Bounded Tools` &nbsp;&nbsp;→&nbsp;&nbsp; `Verification` &nbsp;&nbsp;→&nbsp;&nbsp; `SQLite + Live SSE Events`
+
+- Models each task as a stateful **plan → execute → verify** workflow instead of returning a single chatbot response.
+- Routes steps across planning, coding, file, memory, execution and verification roles through central agent and tool registries.
+- Executes workspace inspection, safe file reads, Git status, memory search and allow-listed test commands through a permissioned executor.
+- Prevents path traversal and unrestricted shell access using workspace boundaries, command allow-lists, timeouts and output limits.
+- Streams persisted workflow events to the dashboard using **Server-Sent Events**, making every step, failure and result observable.
+- Works immediately in deterministic zero-key mode, with optional local **Gemma through Ollama** for evidence-grounded final synthesis.
+- Redesigned from an initially hardware-dependent robotics system into an environment-independent runtime; ROS2, Gazebo and physical devices remain future adapters.
 
 <details>
 <summary><b>View architecture</b></summary>
@@ -49,31 +49,33 @@ flowchart LR
 
 </details>
 
-**Tech:** Next.js 15 · React 19 · TypeScript · Python · FastAPI · LangGraph · SQLite · SSE · Ollama · Docker · Pytest
+### **Tech Stack**
 
-**Repository:** 🔗[SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
+**Next.js 15** &nbsp;&nbsp; • &nbsp;&nbsp; **React 19** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **LangGraph** &nbsp;&nbsp; • &nbsp;&nbsp; **SQLite** &nbsp;&nbsp; • &nbsp;&nbsp; **SSE** &nbsp;&nbsp; • &nbsp;&nbsp; **Ollama** &nbsp;&nbsp; • &nbsp;&nbsp; **Docker** &nbsp;&nbsp; • &nbsp;&nbsp; **Pytest**
+
+**Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
 
 ---
 
-### [NyayaBot + ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI) — Local-First Legal Action Engine
-<br>
+## **NyayaBot + ShieldAI — Local-First Legal Action Engine**
+
 A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
-<br>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ShubhiDixit09/NyayaBot.ShieldAI/main/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="75%">
 </p>
 
-**Workflow:**
-`React UI → FastAPI → ShieldAI Input Guards → Hierarchical Legal Retrieval → Tool Workflow → Optional Gemma → Output Verification → SQLite Audit Trail`
+### **Workflow**
 
-* Uses hierarchical offline retrieval to first identify the relevant legal Act or domain and then narrow the result to supporting provisions.
-* Combines local **TF-IDF retrieval** with an optional Ollama/Gemma layer; a deterministic fallback keeps the core workflows usable when the model is unavailable.
-* Applies ShieldAI checks for prompt-injection patterns, configured PII masking, citation presence, grounding and mandatory legal disclaimers.
-* Produces practical outputs such as procedure checklists, evidence records, case actions and downloadable legal-document drafts.
-* Coordinates statutory search, procedure lookup, evidence handling, drafting and verification through a structured tool-driven workflow.
-* Stores cases and actions across a relational SQLite design with explicit transactions, idempotency-key validation and compare-and-swap updates for conflict-safe writes.
-* Records validation results and execution history so the final answer is traceable rather than presented as an unexplained model response.
+`React UI` &nbsp;&nbsp;→&nbsp;&nbsp; `FastAPI` &nbsp;&nbsp;→&nbsp;&nbsp; `ShieldAI Input Guards` &nbsp;&nbsp;→&nbsp;&nbsp; `Hierarchical Legal Retrieval` &nbsp;&nbsp;→&nbsp;&nbsp; `Tool Workflow` &nbsp;&nbsp;→&nbsp;&nbsp; `Optional Gemma` &nbsp;&nbsp;→&nbsp;&nbsp; `Output Verification` &nbsp;&nbsp;→&nbsp;&nbsp; `SQLite Audit Trail`
+
+- Uses hierarchical offline retrieval to first identify the relevant legal Act or domain and then narrow the result to supporting provisions.
+- Combines local **TF-IDF retrieval** with an optional Ollama/Gemma layer; a deterministic fallback keeps the core workflows usable when the model is unavailable.
+- Applies ShieldAI checks for prompt-injection patterns, configured PII masking, citation presence, grounding and mandatory legal disclaimers.
+- Produces practical outputs such as procedure checklists, evidence records, case actions and downloadable legal-document drafts.
+- Coordinates statutory search, procedure lookup, evidence handling, drafting and verification through a structured tool-driven workflow.
+- Stores cases and actions across a relational SQLite design with explicit transactions, idempotency-key validation and compare-and-swap updates for conflict-safe writes.
+- Records validation results and execution history so the final answer is traceable rather than presented as an unexplained model response.
 
 <details>
 <summary><b>View architecture</b></summary>
@@ -92,34 +94,36 @@ flowchart LR
 
 </details>
 
-**Tech:** React · TypeScript · Python · FastAPI · SQLite · TF-IDF · Ollama · Gemma · ReportLab · Pytest
+### **Tech Stack**
+
+**React** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **SQLite** &nbsp;&nbsp; • &nbsp;&nbsp; **TF-IDF** &nbsp;&nbsp; • &nbsp;&nbsp; **Ollama** &nbsp;&nbsp; • &nbsp;&nbsp; **Gemma** &nbsp;&nbsp; • &nbsp;&nbsp; **ReportLab** &nbsp;&nbsp; • &nbsp;&nbsp; **Pytest**
 
 **Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
 
-**Repository:** 🔗[NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
+**Repository:** [NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
 
 ---
 
-### [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated) — University Timetable Optimisation
-<br>
-> A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
-<br>
+## **ChronoSync — University Timetable Optimisation**
+
+A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="75%">
 </p>
 
-**Workflow:**
-`Next.js UI → FastAPI + Pydantic → Genetic Algorithm → Feasibility Repair → Tabu Search → Validated Timetable + Metrics`
+### **Workflow**
 
-* Models university timetabling as an **NP-hard combinatorial optimisation problem** involving courses, faculty, rooms, laboratories, student groups and time slots.
-* Separates hard constraints—such as faculty, room and student-group clashes—from soft objectives such as preferences and schedule quality.
-* Uses a **Genetic Algorithm** to explore the global search space, followed by deterministic repair to remove remaining infeasibilities.
-* Applies **Tabu Search** as a local-improvement stage to refine feasible schedules without repeatedly returning to recently explored solutions.
-* Returns the generated timetable with conflict reports, warnings, fitness values and convergence information, making optimisation behaviour explainable.
-* Provides typed health, sample-data, validation and generation APIs through FastAPI and Pydantic.
-* Includes an interactive TypeScript dashboard for timetable filtering, resource views, generation controls and optimisation metrics.
-* Packages the frontend and optimisation service through Docker Compose for reproducible local execution.
+`Next.js UI` &nbsp;&nbsp;→&nbsp;&nbsp; `FastAPI + Pydantic` &nbsp;&nbsp;→&nbsp;&nbsp; `Genetic Algorithm` &nbsp;&nbsp;→&nbsp;&nbsp; `Feasibility Repair` &nbsp;&nbsp;→&nbsp;&nbsp; `Tabu Search` &nbsp;&nbsp;→&nbsp;&nbsp; `Validated Timetable + Metrics`
+
+- Models university timetabling as an **NP-hard combinatorial optimisation problem** involving courses, faculty, rooms, laboratories, student groups and time slots.
+- Separates hard constraints—such as faculty, room and student-group clashes—from soft objectives such as preferences and schedule quality.
+- Uses a **Genetic Algorithm** to explore the global search space, followed by deterministic repair to remove remaining infeasibilities.
+- Applies **Tabu Search** as a local-improvement stage to refine feasible schedules without repeatedly returning to recently explored solutions.
+- Returns the generated timetable with conflict reports, warnings, fitness values and convergence information, making optimisation behaviour explainable.
+- Provides typed health, sample-data, validation and generation APIs through FastAPI and Pydantic.
+- Includes an interactive TypeScript dashboard for timetable filtering, resource views, generation controls and optimisation metrics.
+- Packages the frontend and optimisation service through Docker Compose for reproducible local execution.
 
 <details>
 <summary><b>View architecture</b></summary>
@@ -137,23 +141,26 @@ flowchart LR
 
 </details>
 
-**Tech:** Next.js · React · TypeScript · Python · FastAPI · Pydantic · Genetic Algorithms · Tabu Search · Docker
+### **Tech Stack**
 
+**Next.js** &nbsp;&nbsp; • &nbsp;&nbsp; **React** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **Pydantic** &nbsp;&nbsp; • &nbsp;&nbsp; **Genetic Algorithms** &nbsp;&nbsp; • &nbsp;&nbsp; **Tabu Search** &nbsp;&nbsp; • &nbsp;&nbsp; **Docker**
 
-**Repository:** 🔗[ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
+**Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
 
 ---
 
-### Areas of Interest
+## Areas of Interest
 
-**Artificial Intelligence & Machine Learning**
+### Artificial Intelligence & Machine Learning
+
 - Machine Learning
 - Deep Learning
 - Retrieval-Augmented Generation (RAG)
 - Agentic AI
 - Computer Vision
 
-**Competitive Programming**
+### Competitive Programming
+
 - Dynamic Programming
 - Graph Algorithms
 - Trees
@@ -161,10 +168,6 @@ flowchart LR
 - Sliding Window
 - Two Pointers
 - Greedy Algorithms
-  
----
-
-
 
 ---
 
@@ -172,53 +175,40 @@ flowchart LR
 
 ### Languages
 
-- C++
-- Python
-- JavaScript
+**C++** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **JavaScript**
 
 ### Frontend
 
-- React.js
-- HTML
-- CSS
+**React.js** &nbsp;&nbsp; • &nbsp;&nbsp; **HTML** &nbsp;&nbsp; • &nbsp;&nbsp; **CSS**
 
 ### Backend
 
-- Node.js
-- Express.js
-- Fast API
+**Node.js** &nbsp;&nbsp; • &nbsp;&nbsp; **Express.js** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI**
 
 ### Database
 
-- MongoDB
+**MongoDB**
 
 ### Core CS
 
-- Data Structures & Algorithms
-- Object-Oriented Programming
-- Operating Systems
+**Data Structures & Algorithms** &nbsp;&nbsp; • &nbsp;&nbsp; **Object-Oriented Programming** &nbsp;&nbsp; • &nbsp;&nbsp; **Operating Systems**
 
 ### AI / ML
 
-- LangGraph
-- OpenCV
+**LangGraph** &nbsp;&nbsp; • &nbsp;&nbsp; **OpenCV**
 
 ### Tools & Platforms
 
-- Git
-- GitHub
-- Postman
-- VS Code
-- ROS2
-- Arduino IDE
+**Git** &nbsp;&nbsp; • &nbsp;&nbsp; **GitHub** &nbsp;&nbsp; • &nbsp;&nbsp; **Postman** &nbsp;&nbsp; • &nbsp;&nbsp; **VS Code** &nbsp;&nbsp; • &nbsp;&nbsp; **ROS2** &nbsp;&nbsp; • &nbsp;&nbsp; **Arduino IDE**
 
 ---
 
 ## Competitive Programming
 
 I regularly practice Competitive Programming to strengthen problem-solving, algorithmic thinking, and the ability to design efficient algorithms under time constraints.
-- **LeetCode:** **90+ Problems Solved**
-- **Codeforces:** Newbie *(10+ Problems Solved)*
+
+- **LeetCode:** **100+ Problems Solved**
+- **Codeforces:** Newbie *(20+ Problems Solved)*
 
 ---
 
@@ -232,7 +222,7 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 
 ---
 
-### 📚 Currently Working On
+## 📚 Currently Working On
 
 - Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation with future robotics support.
 - Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
@@ -246,7 +236,3 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 - [LinkedIn](https://www.linkedin.com/in/shubhi-dixit-dtu/)
 - [LeetCode](https://leetcode.com/u/shubhi_dixit_09/)
 - [Codeforces](https://codeforces.com/profile/shubhi.dixit.dtu)
-
-pls correct spacings there are mismatches little ugly like between headlines/picture
-also like project names should be of bigger font than further details like that
-pls do and give me 
