@@ -26,108 +26,138 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
   
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
 
-### NyayaBot
-
-NyayaBot is a **100% on-device, zero-cloud legal action engine** built for Track 1: AI for Legal Assistance at the Google "Build with Gemma" hackathon (AIMS-DTU), helping citizens navigate legal processes without sending private grievances to a cloud server. Built with a teammate.
-
-**Key Features**
-
-- Runs entirely on-device on **Gemma 4** via Ollama using Per-Layer Embeddings, keeping inference under 6GB VRAM with zero cloud dependency
-- Hinglish processing engine that maps conversational, code-mixed input directly to statutory intent
-- Vision notice parser that extracts fine, deadline, and issuing authority straight from a photographed legal notice — no OCR chain
-- Hierarchical RAG pipeline over ChromaDB that retrieves the relevant Act before narrowing to the exact Section
-- Custom guardrail layer (**ShieldAI**) enforcing citation verification and output safety checks to prevent hallucinated legal answers
-- ReAct-loop workflow orchestrator coordinating 8 tools (statutory search, document drafting, citation verification) over a 13-table SQLite schema with SQL-level compare-and-swap concurrency and idempotency-key validation for atomic, conflict-safe case writes
-
-**Tech Stack**
-
-Python • TypeScript • React • Gemma 4 • Ollama • ChromaDB • SQLite
-
-🔗 **Repository:** [Gemma-AIMS](https://github.com/ShubhiDixit09/Gemma-AIMS)
-
-Status: 🏆 Built with Gemma — AIMS-DTU Hackathon (Track 1: AI for Legal Assistance)
+I enjoy building systems where AI and algorithms produce real, verifiable outcomes—not just text responses. These projects explore agentic execution, privacy-aware AI and combinatorial optimisation through complete frontend–backend applications.
 
 ---
 
-### SkillForge
+### [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated) — Agentic AI Runtime
 
-SkillForge is an extensible **Agentic AI runtime** that orchestrates specialized AI agents, memory, and external tools to autonomously execute complex workflows from natural-language instructions. It is designed as a foundation for intelligent automation across software systems, with an extensible architecture for future robotics and edge AI integration.
+> A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
 
-## Architecture
+<p align="center">
+  <img src="./assets/projects/skillforge-dashboard.png" alt="SkillForge execution dashboard" width="92%">
+</p>
 
-```text
-                User
-                  │
-                  ▼
-      Natural Language Request
-                  │
-                  ▼
-        Agent Orchestrator
-                  │
-     ┌────────────┼────────────┐
-     ▼            ▼            ▼
-Planning      Memory       Vision
-  Agent        Agent        Agent
-     └────────────┼────────────┘
-                  ▼
-         Execution Agent
-                  │
-                  ▼
-     Tool Registry & Adapters
-                  │
- ┌─────────┬─────────┬─────────┬─────────┐
- │ Browser │ Files   │Terminal │ OpenCV │
- └─────────┴─────────┴─────────┴─────────┘
-                  │
-                  ▼
- Simulation & Robotics Adapters
+**Workflow:**
+`Next.js Dashboard → FastAPI → LangGraph Orchestrator → Specialised Agents → Bounded Tools → Verification → SQLite + Live SSE Events`
+
+* Models each task as a stateful **plan → execute → verify** workflow instead of returning a single chatbot response.
+* Routes steps across planning, coding, file, memory, execution and verification roles through central agent and tool registries.
+* Executes workspace inspection, safe file reads, Git status, memory search and allow-listed test commands through a permissioned executor.
+* Prevents path traversal and unrestricted shell access using workspace boundaries, command allow-lists, timeouts and output limits.
+* Streams persisted workflow events to the dashboard using **Server-Sent Events**, making every step, failure and result observable.
+* Works immediately in deterministic zero-key mode, with optional local **Gemma through Ollama** for evidence-grounded final synthesis.
+* Redesigned from an initially hardware-dependent robotics system into an environment-independent runtime; ROS2, Gazebo and physical devices remain future adapters.
+
+<details>
+<summary><b>View architecture</b></summary>
+
+```mermaid
+flowchart LR
+    U["Natural-language goal"] --> UI["Next.js UI"]
+    UI --> API["FastAPI"]
+    API --> LG["LangGraph"]
+    LG --> AG["Specialised agents"]
+    AG --> EX["Policy-bound executor"]
+    EX --> TL["Files · Git · Tests · Memory"]
+    TL --> VR["Verification"]
+    VR --> UI
 ```
 
-## Key Features
+</details>
 
-- Multi-agent architecture comprising **Planning, Vision, Memory, and Execution** agents
-- Natural-language task execution powered by Large Language Models (LLMs)
-- Modular tool execution framework for Filesystem, Browser, Terminal, and external APIs
-- Event-driven workflow orchestration with reusable AI skills
-- Computer vision support using OpenCV
-- Browser automation for autonomous web interactions
-- Extensible adapter system for simulation and future robotics integration
-- Distributed runtime designed for scalable agent orchestration
+**Tech:** Next.js 15 · React 19 · TypeScript · Python · FastAPI · LangGraph · SQLite · SSE · Ollama · Docker · Pytest
 
-
-**Tech Stack**
-
-Python • FastAPI • LangGraph • OpenCV • Docker • Git
-
-### Planned Integrations
-
-ROS2 • Gazebo • Playwright • PostgreSQL • Redis • YOLOv8
-
-Status: 🚧 Active Development
+**Status:** Runnable software MVP · Active development
+**Repository:** [github.com/ShubhiDixit09/SkillForge-updated](https://github.com/ShubhiDixit09/SkillForge-updated)
 
 ---
 
-### ChronoSync
+### [NyayaBot + ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI) — Local-First Legal Action Engine
 
-ChronoSync is an intelligent timetable scheduling platform for universities that combines Genetic Algorithms and Greedy Optimization to automate timetable generation while satisfying scheduling constraints and maximizing resource utilization.
+> A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
 
-**Key Features**
+<p align="center">
+  <img src="./assets/projects/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="92%">
+</p>
 
-- Multi-department timetable scheduling
-- Faculty preference optimization
-- Hybrid Genetic Algorithm + Greedy Optimization
-- Automatic conflict detection and schedule regeneration
-- Shared classroom and laboratory allocation
-- Role-based dashboards for Admin, Teacher, and Student
-- Designed for seamless ERP integration
+**Workflow:**
+`React UI → FastAPI → ShieldAI Input Guards → Hierarchical Legal Retrieval → Tool Workflow → Optional Gemma → Output Verification → SQLite Audit Trail`
 
-## Tech Stack
+* Uses hierarchical offline retrieval to first identify the relevant legal Act or domain and then narrow the result to supporting provisions.
+* Combines local **TF-IDF retrieval** with an optional Ollama/Gemma layer; a deterministic fallback keeps the core workflows usable when the model is unavailable.
+* Applies ShieldAI checks for prompt-injection patterns, configured PII masking, citation presence, grounding and mandatory legal disclaimers.
+* Produces practical outputs such as procedure checklists, evidence records, case actions and downloadable legal-document drafts.
+* Coordinates statutory search, procedure lookup, evidence handling, drafting and verification through a structured tool-driven workflow.
+* Stores cases and actions across a relational SQLite design with explicit transactions, idempotency-key validation and compare-and-swap updates for conflict-safe writes.
+* Records validation results and execution history so the final answer is traceable rather than presented as an unexplained model response.
 
-React.js • Node.js • Express.js • MongoDB • Python • Genetic Algorithms • Greedy Optimization
+<details>
+<summary><b>View architecture</b></summary>
 
-🔗 **Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync)
+```mermaid
+flowchart LR
+    U["Citizen query"] --> UI["React UI"]
+    UI --> API["FastAPI"]
+    API --> IN["ShieldAI input checks"]
+    IN --> RG["Hierarchical retrieval"]
+    RG --> WF["Legal tools + optional Gemma"]
+    WF --> OUT["Citation + safety checks"]
+    OUT --> DB["SQLite audit trail"]
+    DB --> UI
+```
+
+</details>
+
+**Tech:** React · TypeScript · Python · FastAPI · SQLite · TF-IDF · Ollama · Gemma · ReportLab · Pytest
+
+**Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
+**Repository:** [github.com/ShubhiDixit09/NyayaBot.ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
+
+---
+
+### [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated) — University Timetable Optimisation
+
+> A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
+
+<p align="center">
+  <img src="./assets/projects/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="92%">
+</p>
+
+**Workflow:**
+`Next.js UI → FastAPI + Pydantic → Genetic Algorithm → Feasibility Repair → Tabu Search → Validated Timetable + Metrics`
+
+* Models university timetabling as an **NP-hard combinatorial optimisation problem** involving courses, faculty, rooms, laboratories, student groups and time slots.
+* Separates hard constraints—such as faculty, room and student-group clashes—from soft objectives such as preferences and schedule quality.
+* Uses a **Genetic Algorithm** to explore the global search space, followed by deterministic repair to remove remaining infeasibilities.
+* Applies **Tabu Search** as a local-improvement stage to refine feasible schedules without repeatedly returning to recently explored solutions.
+* Returns the generated timetable with conflict reports, warnings, fitness values and convergence information, making optimisation behaviour explainable.
+* Provides typed health, sample-data, validation and generation APIs through FastAPI and Pydantic.
+* Includes an interactive TypeScript dashboard for timetable filtering, resource views, generation controls and optimisation metrics.
+* Packages the frontend and optimisation service through Docker Compose for reproducible local execution.
+
+<details>
+<summary><b>View architecture</b></summary>
+
+```mermaid
+flowchart LR
+    U["Academic inputs"] --> UI["Next.js UI"]
+    UI --> API["FastAPI + Pydantic"]
+    API --> GA["Genetic Algorithm"]
+    GA --> RP["Feasibility repair"]
+    RP --> TS["Tabu Search"]
+    TS --> VL["Constraint validation"]
+    VL --> UI
+```
+
+</details>
+
+**Tech:** Next.js · React · TypeScript · Python · FastAPI · Pydantic · Genetic Algorithms · Tabu Search · Docker
+
+**Status:** Runnable full-stack optimisation prototype
+**Repository:** [github.com/ShubhiDixit09/ChronoSync-updated](https://github.com/ShubhiDixit09/ChronoSync-updated)
 
 ---
 
