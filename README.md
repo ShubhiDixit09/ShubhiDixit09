@@ -51,7 +51,7 @@ flowchart LR
 
 ### **Tech Stack**
 
-**Next.js 15** &nbsp;&nbsp; • &nbsp;&nbsp; **React 19** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **LangGraph** &nbsp;&nbsp; • &nbsp;&nbsp; **SQLite** &nbsp;&nbsp; • &nbsp;&nbsp; **SSE** &nbsp;&nbsp; • &nbsp;&nbsp; **Ollama** &nbsp;&nbsp; • &nbsp;&nbsp; **Docker** &nbsp;&nbsp; • &nbsp;&nbsp; **Pytest**
+Next.js • React • TypeScript • Python  • FastAPI • LangGraph • SQLite • SSE • Ollama • Docker • Pytest
 
 **Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
 
@@ -96,7 +96,7 @@ flowchart LR
 
 ### **Tech Stack**
 
-**React** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **SQLite** &nbsp;&nbsp; • &nbsp;&nbsp; **TF-IDF** &nbsp;&nbsp; • &nbsp;&nbsp; **Ollama** &nbsp;&nbsp; • &nbsp;&nbsp; **Gemma** &nbsp;&nbsp; • &nbsp;&nbsp; **ReportLab** &nbsp;&nbsp; • &nbsp;&nbsp; **Pytest**
+React • TypeScript• Python• FastAPI • SQLite• TF-IDF • Ollama • &Gemma • ReportLab • Pytest
 
 **Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
 
@@ -143,7 +143,7 @@ flowchart LR
 
 ### **Tech Stack**
 
-**Next.js** &nbsp;&nbsp; • &nbsp;&nbsp; **React** &nbsp;&nbsp; • &nbsp;&nbsp; **TypeScript** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI** &nbsp;&nbsp; • &nbsp;&nbsp; **Pydantic** &nbsp;&nbsp; • &nbsp;&nbsp; **Genetic Algorithms** &nbsp;&nbsp; • &nbsp;&nbsp; **Tabu Search** &nbsp;&nbsp; • &nbsp;&nbsp; **Docker**
+Next.js • React • TypeScript • Python • FastAPI • Pydantic • Genetic Algorithms • Tabu Search • Docker
 
 **Repository:** [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
 
@@ -236,9 +236,9 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 
 ## 📚 Currently Working On
 
-- Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation.
-- Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
 - Strengthening problem-solving skills through Data Structures & Algorithms and Competitive Programming.
+- Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
+- Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation.
 
 ---
 
