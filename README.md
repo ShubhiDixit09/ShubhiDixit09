@@ -210,10 +210,8 @@ flowchart LR
 
 - Git
 - GitHub
-- Postman
-- VS Code
-- ROS2
-- Arduino IDE
+- Rest APIs
+- Canvas API
 
 ---
 
@@ -222,7 +220,7 @@ flowchart LR
 I regularly practice Competitive Programming to strengthen problem-solving, algorithmic thinking, and the ability to design efficient algorithms under time constraints.
 
 - **LeetCode:** **100+ Problems Solved**
-- **Codeforces:** Newbie *(20+ Problems Solved)*
+- **Codeforces:** 20+ Problems Solved
 
 ---
 
@@ -238,9 +236,8 @@ I regularly practice Competitive Programming to strengthen problem-solving, algo
 
 ## 📚 Currently Working On
 
-- Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation with future robotics support.
+- Building **SkillForge**, an extensible multi-agent AI runtime for intelligent automation.
 - Learning **Machine Learning, Deep Learning, Generative AI, RAG, and Multi-Agent AI** through hands-on projects.
-- Exploring **ROS2, Computer Vision, LangGraph, and Snapdragon AI technologies** for intelligent autonomous systems.
 - Strengthening problem-solving skills through Data Structures & Algorithms and Competitive Programming.
 
 ---
