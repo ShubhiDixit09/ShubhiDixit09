@@ -6,14 +6,14 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 I enjoy building systems where AI and algorithms produce real, verifiable outcomes—not just text responses. These projects explore agentic execution, privacy-aware AI and combinatorial optimisation through complete frontend–backend applications.
 
 ---
 
 ### [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated) — Agentic AI Runtime
-
+<br>
 A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
 <br>
 
@@ -58,7 +58,6 @@ flowchart LR
 
 ### [NyayaBot + ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI) — Local-First Legal Action Engine
 <br>
-
 A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
 <br>
 
@@ -102,7 +101,7 @@ flowchart LR
 ---
 
 ### [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated) — University Timetable Optimisation
-
+<br>
 > A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
 <br>
 
