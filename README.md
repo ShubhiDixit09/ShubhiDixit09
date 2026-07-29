@@ -175,31 +175,45 @@ flowchart LR
 
 ### Languages
 
-**C++** &nbsp;&nbsp; • &nbsp;&nbsp; **Python** &nbsp;&nbsp; • &nbsp;&nbsp; **JavaScript**
+- C++
+- Python
+- JavaScript
 
 ### Frontend
 
-**React.js** &nbsp;&nbsp; • &nbsp;&nbsp; **HTML** &nbsp;&nbsp; • &nbsp;&nbsp; **CSS**
+- React.js
+- HTML
+- CSS
 
 ### Backend
 
-**Node.js** &nbsp;&nbsp; • &nbsp;&nbsp; **Express.js** &nbsp;&nbsp; • &nbsp;&nbsp; **FastAPI**
+- Node.js
+- Express.js
+- FastAPI
 
 ### Database
 
-**MongoDB**
+- MongoDB
 
 ### Core CS
 
-**Data Structures & Algorithms** &nbsp;&nbsp; • &nbsp;&nbsp; **Object-Oriented Programming** &nbsp;&nbsp; • &nbsp;&nbsp; **Operating Systems**
+- Data Structures & Algorithms
+- Object-Oriented Programming
+- Operating Systems
 
 ### AI / ML
 
-**LangGraph** &nbsp;&nbsp; • &nbsp;&nbsp; **OpenCV**
+- LangGraph
+- OpenCV
 
 ### Tools & Platforms
 
-**Git** &nbsp;&nbsp; • &nbsp;&nbsp; **GitHub** &nbsp;&nbsp; • &nbsp;&nbsp; **Postman** &nbsp;&nbsp; • &nbsp;&nbsp; **VS Code** &nbsp;&nbsp; • &nbsp;&nbsp; **ROS2** &nbsp;&nbsp; • &nbsp;&nbsp; **Arduino IDE**
+- Git
+- GitHub
+- Postman
+- VS Code
+- ROS2
+- Arduino IDE
 
 ---
 
