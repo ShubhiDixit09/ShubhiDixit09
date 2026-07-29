@@ -6,26 +6,6 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ---
 
-### Areas of Interest
-
-**Artificial Intelligence & Machine Learning**
-- Machine Learning
-- Deep Learning
-- Retrieval-Augmented Generation (RAG)
-- Agentic AI
-- Computer Vision
-
-**Competitive Programming**
-- Dynamic Programming
-- Graph Algorithms
-- Trees
-- Binary Search
-- Sliding Window
-- Two Pointers
-- Greedy Algorithms
-  
----
-
 ## 🚀 Featured Projects
 
 I enjoy building systems where AI and algorithms produce real, verifiable outcomes—not just text responses. These projects explore agentic execution, privacy-aware AI and combinatorial optimisation through complete frontend–backend applications.
@@ -37,7 +17,7 @@ I enjoy building systems where AI and algorithms produce real, verifiable outcom
 > A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
 
 <p align="center">
-  <img src="./assets/projects/skillforge-dashboard.png" alt="SkillForge execution dashboard" width="92%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/SkillForge-updated/main/skillforge-dashboard.png"
 </p>
 
 **Workflow:**
@@ -80,7 +60,7 @@ flowchart LR
 > A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
 
 <p align="center">
-  <img src="./assets/projects/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="92%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/NyayaBot.ShieldAI/main/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="92%">
 </p>
 
 **Workflow:**
@@ -123,7 +103,7 @@ flowchart LR
 > A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
 
 <p align="center">
-  <img src="./assets/projects/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="92%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="92%">
 </p>
 
 **Workflow:**
@@ -158,6 +138,30 @@ flowchart LR
 
 **Status:** Runnable full-stack optimisation prototype
 **Repository:** [github.com/ShubhiDixit09/ChronoSync-updated](https://github.com/ShubhiDixit09/ChronoSync-updated)
+
+---
+
+### Areas of Interest
+
+**Artificial Intelligence & Machine Learning**
+- Machine Learning
+- Deep Learning
+- Retrieval-Augmented Generation (RAG)
+- Agentic AI
+- Computer Vision
+
+**Competitive Programming**
+- Dynamic Programming
+- Graph Algorithms
+- Trees
+- Binary Search
+- Sliding Window
+- Two Pointers
+- Greedy Algorithms
+  
+---
+
+
 
 ---
 
