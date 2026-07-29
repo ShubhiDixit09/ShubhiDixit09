@@ -14,10 +14,11 @@ I enjoy building systems where AI and algorithms produce real, verifiable outcom
 
 ### [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated) — Agentic AI Runtime
 
-> A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
+A software-first runtime that converts natural-language goals into planned, permissioned and verified software actions.
+<br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ShubhiDixit09/SkillForge-updated/main/skillforge-dashboard.png"
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/SkillForge-updated/main/skillforge-dashboard.png" alt="SkillForge execution dashboard" width="75%">
 </p>
 
 **Workflow:**
@@ -50,17 +51,19 @@ flowchart LR
 
 **Tech:** Next.js 15 · React 19 · TypeScript · Python · FastAPI · LangGraph · SQLite · SSE · Ollama · Docker · Pytest
 
-**Status:** Runnable software MVP · Active development
-**Repository:** [github.com/ShubhiDixit09/SkillForge-updated](https://github.com/ShubhiDixit09/SkillForge-updated)
+**Status:** Runnable software MVP
+**Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
 
 ---
 
 ### [NyayaBot + ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI) — Local-First Legal Action Engine
+<br>
 
-> A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
+A local-first legal assistance system that turns an English, Hindi or Hinglish grievance into grounded legal information, actionable procedures and draft documents.
+<br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ShubhiDixit09/NyayaBot.ShieldAI/main/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="92%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/NyayaBot.ShieldAI/main/nyayabot-dashboard.png" alt="NyayaBot legal assistance dashboard" width="75%">
 </p>
 
 **Workflow:**
@@ -94,16 +97,17 @@ flowchart LR
 **Tech:** React · TypeScript · Python · FastAPI · SQLite · TF-IDF · Ollama · Gemma · ReportLab · Pytest
 
 **Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
-**Repository:** [github.com/ShubhiDixit09/NyayaBot.ShieldAI](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
+**Repository:** [NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
 
 ---
 
 ### [ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated) — University Timetable Optimisation
 
 > A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
+<br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="92%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="75%">
 </p>
 
 **Workflow:**
@@ -137,7 +141,7 @@ flowchart LR
 **Tech:** Next.js · React · TypeScript · Python · FastAPI · Pydantic · Genetic Algorithms · Tabu Search · Docker
 
 **Status:** Runnable full-stack optimisation prototype
-**Repository:** [github.com/ShubhiDixit09/ChronoSync-updated](https://github.com/ShubhiDixit09/ChronoSync-updated)
+ **Repository:** 🔗[ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
 
 ---
 
