@@ -51,8 +51,7 @@ flowchart LR
 
 **Tech:** Next.js 15 · React 19 · TypeScript · Python · FastAPI · LangGraph · SQLite · SSE · Ollama · Docker · Pytest
 
-**Status:** Runnable software MVP
-**Repository:** [SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
+**Repository:** 🔗[SkillForge](https://github.com/ShubhiDixit09/SkillForge-updated)
 
 ---
 
@@ -96,7 +95,8 @@ flowchart LR
 **Tech:** React · TypeScript · Python · FastAPI · SQLite · TF-IDF · Ollama · Gemma · ReportLab · Pytest
 
 **Built with a teammate for:** Google Build with Gemma Hackathon, AIMS-DTU
-**Repository:** [NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
+
+**Repository:** 🔗[NyayaBot](https://github.com/ShubhiDixit09/NyayaBot.ShieldAI)
 
 ---
 
@@ -139,8 +139,8 @@ flowchart LR
 
 **Tech:** Next.js · React · TypeScript · Python · FastAPI · Pydantic · Genetic Algorithms · Tabu Search · Docker
 
-**Status:** Runnable full-stack optimisation prototype
- **Repository:** 🔗[ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
+
+**Repository:** 🔗[ChronoSync](https://github.com/ShubhiDixit09/ChronoSync-updated)
 
 ---
 
