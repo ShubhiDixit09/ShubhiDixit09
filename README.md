@@ -64,7 +64,7 @@ Build with Gemma Hackathon, AIMS-DTU
 A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png.png" alt="ChronoSync timetable dashboard" width="75%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ChronoSync-updated/main/chronosync-dashboard.png" alt="ChronoSync timetable dashboard" width="75%">
 </p>
 
 ### **Workflow**
