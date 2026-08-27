@@ -6,7 +6,7 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ---
 
-### Featured Projects
+# Featured Projects
 
 ---
 
