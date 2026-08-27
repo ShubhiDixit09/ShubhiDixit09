@@ -153,6 +153,34 @@ Built for the **Build with Gemma Hackathon, AIMS-DTU**.
 
 ---
 
+## **Oon Nirnay — Evidence-First Wool Decision Navigator**
+
+An AI decision-support system for rural wool entrepreneurs that compares selling and processing choices using buyer evidence, real costs, constraints and uncertainty instead of giving generic advice.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ShubhiDixit09/main/oon-nirnay-dashboard.png" alt="Oon Nirnay evidence-first wool decision navigator" width="75%">
+</p>
+
+### **Workflow**
+
+`User Situation + Wool Batch` &nbsp;&nbsp;→&nbsp;&nbsp; `Buyer Evidence` &nbsp;&nbsp;→&nbsp;&nbsp; `Cost + Constraint Analysis` &nbsp;&nbsp;→&nbsp;&nbsp; `Missing-Evidence Check` &nbsp;&nbsp;→&nbsp;&nbsp; `Option Comparison` &nbsp;&nbsp;→&nbsp;&nbsp; `Explainable Recommendation`
+
+* Compares **raw sale, cleaned/graded wool, yarn pilots and collective selling** using buyer offers, processing yield, labour, transport, packaging, storage and immediate cash constraints.
+* Separates **verified buyer actions from assumptions**, highlights missing evidence and accounts for seasonal and biological risks before recommending a path.
+* Produces an **explainable numerical cost–benefit breakdown** rather than a black-box answer, making the reasoning behind each recommendation visible.
+* Uses a **multi-widget LLM workflow** to combine situation context, wool economics, buyer evidence, flock condition and language preference into one decision.
+* Supports **simple Hindi/Kumaoni-aware communication**, uncertainty-aware outputs and responsible-AI guardrails for users with limited access to reliable market information.
+
+### **Tech Stack**
+
+AWS PartyRock • Generative AI • LLMs • Prompt Engineering • Multi-Widget AI Workflow • Responsible AI
+
+Built for the **Women Who Master Hackathon**.
+
+**Live App:** [Oon Nirnay](https://partyrock.aws/u/shubhidixit/YF8fKzGqq/or-Oon-Nirnay)
+
+---
+
 ## **ChronoSync — University Timetable Optimisation**
 
 A full-stack scheduling platform that converts academic requirements into conflict-checked, preference-aware university timetables.
@@ -291,7 +319,7 @@ SQLite • MongoDB • Weaviate
 
 ### AI and Machine Learning
 
-LangGraph • OpenCV • TF-IDF • RAG • Ollama • Gemma
+LangGraph • OpenCV • TF-IDF • RAG • Ollama • Gemma • Generative AI • LLMs • Prompt Engineering
 
 ### Core Computer Science
 
