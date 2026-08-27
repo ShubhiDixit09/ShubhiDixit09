@@ -360,6 +360,6 @@ I regularly practise Competitive Programming to strengthen algorithmic problem-s
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shubhi-dixit-dtu/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/shubhi_dixit_09/)
-[![Codeforces](https://img.shields.io/badge/Codeforces-Profile-blue?style=for-the-badge&logo=codeforces)](https://codeforces.com/profile/shubhi.dixit.dtu)
+[LinkedIn](https://www.linkedin.com/in/shubhi-dixit-dtu/) •
+[LeetCode](https://leetcode.com/u/shubhi_dixit_09/) •
+[Codeforces](https://codeforces.com/profile/shubhi.dixit.dtu)
