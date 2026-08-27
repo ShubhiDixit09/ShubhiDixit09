@@ -8,10 +8,6 @@ I enjoy solving algorithmic challenges, building intelligent systems, and applyi
 
 ## Featured Projects
 
-I enjoy building systems where AI and algorithms produce real, verifiable outcomes—not just text responses. These projects explore agentic execution, privacy-aware AI and combinatorial optimisation through complete frontend–backend applications.
-
----
-
 ---
 
 ## **MuskMelon — Version-Controlled Digital Twin of Elon Musk**
