@@ -12,6 +12,54 @@ I build systems where AI, distributed coordination and algorithms produce observ
 
 ---
 
+## **MuskMelon — Version-Controlled Digital Twin of Elon Musk**
+
+An adaptive, two-way knowledge twin that uses temporal RAG to track how Elon Musk’s documented knowledge evolves instead of merely imitating his personality.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/muskmelon/main/muskmelon-dashboard.png" alt="MuskMelon temporal knowledge twin dashboard" width="75%">
+</p>
+
+### **Workflow**
+
+`User Query` &nbsp;&nbsp;→&nbsp;&nbsp; `Temporal Query Planning` &nbsp;&nbsp;→&nbsp;&nbsp; `Context Capsule` &nbsp;&nbsp;→&nbsp;&nbsp; `Weaviate Retrieval` &nbsp;&nbsp;→&nbsp;&nbsp; `Evidence-Grounded Generation` &nbsp;&nbsp;→&nbsp;&nbsp; `Grounding Gate` &nbsp;&nbsp;→&nbsp;&nbsp; `Answer Receipt`
+
+* Converts dated statements, interviews and roadmap documents into traceable **Knowledge Commits** with temporal and provenance metadata.
+* Supports **Now Mode, Time Lens and Belief Diff** to reveal current positions, reconstruct historical knowledge and compare belief shifts across periods.
+* Produces **Answer Receipts** containing supporting sources, dates, contradictions, evidence coverage and grounding confidence.
+* Enforces a **Knowledge–Voice Firewall** that prevents persona style from introducing unsupported factual claims.
+* Reuses relevant evidence through a compact **Context Capsule**, improving follow-up continuity while reducing repeated retrieval and token usage.
+* Maintains a separate, consent-based **User Twin** to personalise explanation depth and tone without changing historical evidence.
+* Routes Google Drive ingestion, Weaviate retrieval and LLM generation through **Swytchcode** for policy-controlled and auditable execution.
+* Secured **4th place among 108 teams in Round 2** of VibeWright at Oblivion’26, after advancing from 200+ Round 1 teams.
+
+<details>
+<summary><b>View architecture</b></summary>
+
+```mermaid
+flowchart LR
+    U["User query"] --> T["Temporal planner"]
+    T --> C["Context Capsule"]
+    C --> S["Swytchcode"]
+    S --> W["Weaviate retrieval"]
+    W --> E["Evidence Pack"]
+    E --> L["LLM + User Twin"]
+    L --> G["Grounding Gate"]
+    G --> A["Answer Receipt"]
+```
+
+</details>
+
+### **Tech Stack**
+
+Next.js • React • TypeScript • Node.js • Temporal RAG • Weaviate Cloud • OpenAI • Swytchcode • Google Drive
+
+Built for the **VibeWright Hackathon at Oblivion’26, NSUT**.
+
+**Repository:** [MuskMelon](https://github.com/ShubhiDixit09/muskmelon)
+
+---
+
 ## **JeevanMesh — Self-Healing Disaster-Response Drone Swarm**
 
 A browser-based rescue command center that simulates leaderless drone coordination when communication networks and disaster infrastructure become unreliable.
