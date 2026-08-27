@@ -156,7 +156,7 @@ Built for the **Build with Gemma Hackathon, AIMS-DTU**.
 An AI decision-support system for rural wool entrepreneurs that compares selling and processing choices using buyer evidence, real costs, constraints and uncertainty instead of giving generic advice.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ShubhiDixit09/main/oon-nirnay-dashboard.png" alt="Oon Nirnay evidence-first wool decision navigator" width="75%">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/Oon-Nirnay-AWS/main/assets/oon-nirnay-dashboard.png" alt="Oon Nirnay dashboard" width="75%">
 </p>
 
 ### **Workflow**
