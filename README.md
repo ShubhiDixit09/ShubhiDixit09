@@ -1,14 +1,16 @@
 # Shubhi Dixit
 
-Computer Science undergraduate at **Delhi Technological University (DTU)** focused on **Artificial Intelligence, Distributed Systems, Competitive Programming, and Software Engineering**.
+Computer Science undergraduate at **Delhi Technological University (DTU)** passionate about **Artificial Intelligence, Distributed Systems, Competitive Programming, and Software Engineering**.
 
-I enjoy transforming ambitious ideas into working systems—from leaderless disaster-response swarms and privacy-aware AI tools to agentic runtimes and combinatorial optimisation platforms. I believe in learning by building, testing and continuously improving.
+I enjoy solving algorithmic challenges, building intelligent systems, and applying AI to real-world problems through hands-on projects. I believe in learning by building and continuously exploring new technologies.
 
 ---
 
 ## Featured Projects
 
-I build systems where AI, distributed coordination and algorithms produce observable, verifiable outcomes—not just text responses. These projects explore resilient multi-agent systems, privacy-aware AI, agentic execution and combinatorial optimisation through complete applications.
+I enjoy building systems where AI and algorithms produce real, verifiable outcomes—not just text responses. These projects explore agentic execution, privacy-aware AI and combinatorial optimisation through complete frontend–backend applications.
+
+---
 
 ---
 
