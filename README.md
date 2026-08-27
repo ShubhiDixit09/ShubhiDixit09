@@ -1,4 +1,4 @@
- Shubhi Dixit
+# Shubhi Dixit
 
 Computer Science undergraduate at **Delhi Technological University (DTU)** passionate about **Artificial Intelligence, Distributed Systems, Competitive Programming, and Software Engineering**.
 
