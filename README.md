@@ -4,12 +4,6 @@ Computer Science undergraduate at **Delhi Technological University (DTU)** focus
 
 I enjoy transforming ambitious ideas into working systems—from leaderless disaster-response swarms and privacy-aware AI tools to agentic runtimes and combinatorial optimisation platforms. I believe in learning by building, testing and continuously improving.
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/shubhi-dixit-dtu/">LinkedIn</a> •
-  <a href="https://leetcode.com/u/shubhi_dixit_09/">LeetCode</a> •
-  <a href="https://codeforces.com/profile/shubhi.dixit.dtu">Codeforces</a>
-</p>
-
 ---
 
 ## Featured Projects
