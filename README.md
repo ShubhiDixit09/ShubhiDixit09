@@ -58,6 +58,54 @@ Built for the **VibeWright Hackathon at Oblivion’26, NSUT**.
 
 ---
 
+## **CHIRAAG: Evidence-Based Night Walking Routes**
+
+A night-routing system that finds better-lit walking paths within a user-defined detour limit, measuring actual unlit street exposure rather than relying on generic safety scores.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/ShubhiDixit09/main/assets/chiraag-dashboard.webp" alt="CHIRAAG dashboard comparing shortest and better-lit walking routes in Central Delhi" width="75%">
+</p>
+
+### **Workflow**
+
+`OpenStreetMap + Mapillary` &nbsp;&nbsp;→&nbsp;&nbsp; `PostGIS Street Graph` &nbsp;&nbsp;→&nbsp;&nbsp; `Lighting Gap Analysis` &nbsp;&nbsp;→&nbsp;&nbsp; `Exposure-Weighted Dijkstra` &nbsp;&nbsp;→&nbsp;&nbsp; `Detour Validation` &nbsp;&nbsp;→&nbsp;&nbsp; `Evidence-Backed Route Comparison`
+
+* Builds a pedestrian network across **11.42 km² of Central Delhi**, using **3,970 road segments** and **7,120 mapped streetlights**.
+* Calculates **unlit metres and the longest continuous dark stretch** by merging streetlight coverage intervals, rather than simply counting lamps.
+* Compares distance-optimal and **exposure-weighted Dijkstra** routes while enforcing a user-selected detour cap and time-of-day weighting.
+* Keeps **observed darkness separate from unknown streets** and lets users choose how unsurveyed segments affect routing.
+* Exposes segment-level lighting evidence and incorporates **human night audits** that override inferred scores.
+* In a **50-journey pilot**, found lower-exposure alternatives for **72% of journeys**, avoiding a median **136 m of unlit road** for **28 m of additional walking**.
+
+<details>
+<summary><b>View architecture</b></summary>
+
+```mermaid
+flowchart LR
+    O["OSM streets + mapped lights"] --> P["Geospatial scoring pipeline"]
+    A["Human night audits"] --> P
+    P --> D["PostGIS road evidence"]
+    D --> G["NetworkX weighted graph"]
+    G --> R["Dijkstra + detour check"]
+    R --> U["React route comparison"]
+    D --> E["Inspectable segment evidence"]
+    E --> U
+```
+
+</details>
+
+### **Tech Stack**
+
+React • Vite • MapLibre GL • Python • FastAPI • NetworkX • PostgreSQL • PostGIS • OSMnx • GeoPandas • Docker
+
+Built for the **Smart India Hackathon**.
+
+**Live App:** [CHIRAAG](https://chiraag-1hbj.vercel.app/)
+
+**Repository:** [CHIRAAG](https://github.com/ShubhiDixit09/CHIRAAG) *(private)*
+
+---
+
 ## **JeevanMesh — Self-Healing Disaster-Response Drone Swarm**
 
 A browser-based rescue command center that simulates leaderless drone coordination when communication networks and disaster infrastructure become unreliable.
