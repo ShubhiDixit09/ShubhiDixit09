@@ -150,8 +150,6 @@ flowchart LR
 
 Python • PyTorch • Hugging Face Transformers • Qwen2.5-VL • bitsandbytes (4-bit NF4) • scikit-learn • Gradio • Google Colab (Tesla T4)
 
-Built for **AIMS-DTU Recruitment, Round 2**.
-
 **Repository:** [GROVE-VCR](https://github.com/ShubhiDixit09/updated_VCR_AIMS_R2)
 
 ---
