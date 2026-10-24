@@ -58,7 +58,7 @@ Built for the **VibeWright Hackathon at Oblivion’26, NSUT**.
 
 ---
 
-## **CHIRAAG: Evidence-Based Night Walking Routes**
+## **CHIRAAG — Evidence-Based Night Walking Routes**
 
 A night-routing system that finds better-lit walking paths within a user-defined detour limit, measuring actual unlit street exposure rather than relying on generic safety scores.
 
