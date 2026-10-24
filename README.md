@@ -100,8 +100,6 @@ React • Vite • MapLibre GL • Python • FastAPI • NetworkX • PostgreSQ
 
 Built for the **Smart India Hackathon**.
 
-**Live App:** [CHIRAAG](https://chiraag-1hbj.vercel.app/)
-
 **Repository:** [CHIRAAG](https://github.com/ShubhiDixit09/CHIRAAG) *(private)*
 
 ---
