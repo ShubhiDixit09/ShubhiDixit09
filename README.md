@@ -102,6 +102,58 @@ Built for the **Smart India Hackathon**.
 
 **Repository:** [CHIRAAG](https://github.com/ShubhiDixit09/CHIRAAG) *(private)*
 
+
+---
+
+## **GROVE-VCR | Grounded Visual Commonsense Reasoning**
+
+A two-stage multimodal reasoning system that selects an image-grounded answer, then ranks its supporting explanations using both whole-scene context and question-focused visual evidence.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ShubhiDixit09/updated_VCR_AIMS_R2/main/figures/grove_vcr_demo_output.jpeg" alt="GROVE-VCR demo showing the image, locked answer, selected rationale, evidence and candidate scores" width="75%">
+</p>
+
+### **Workflow**
+
+`Image + Question` &nbsp;&nbsp;→&nbsp;&nbsp; `Frozen Qwen2.5-VL` &nbsp;&nbsp;→&nbsp;&nbsp; `Constrained Answer Scoring` &nbsp;&nbsp;→&nbsp;&nbsp; `Answer Lock` &nbsp;&nbsp;→&nbsp;&nbsp; `Full + Focused Visual Evidence` &nbsp;&nbsp;→&nbsp;&nbsp; `Learned Rationale Ranker` &nbsp;&nbsp;→&nbsp;&nbsp; `Answer + Rationale`
+
+* Uses a **frozen, 4-bit Qwen2.5-VL-3B** backbone to score four answer choices directly from token logits, without free-text answer generation.
+* Enforces **strict sequential reasoning**: the selected answer is locked before ranking four candidate rationales, preventing the second stage from rewriting it.
+* Grounds explanations in **dual-view visual evidence**, combining the complete annotated scene with a crop of entities referenced by the question.
+* Trains a lightweight **five-feature logistic rationale ranker** using full-view and focused-view probabilities, their differences and candidate-relative margins.
+* Applies **image-grouped cross-validation** to prevent same-frame leakage; exports the trained scaler and ranker coefficients to portable JSON.
+* Achieved **80% answer, 55% rationale and 40% joint accuracy** on a **20-question locked evaluation**, improving rationale accuracy by **5 percentage points** over the final sequential baseline while leaving joint accuracy unchanged.
+* Documents the earlier **60/40/15 to 80/55/40** development trajectory across different snapshots, and retains unsuccessful counterfactual, entailment and reciprocal-check experiments as transparent ablations.
+* Includes a **Gradio demo, reproducible CLI, prediction CSVs and CPU tests**, with auditable candidate scores and fallback decisions.
+
+<details>
+<summary><b>View architecture</b></summary>
+
+```mermaid
+flowchart LR
+    I["Image + question + choices"] --> G["Full-frame grounding"]
+    G --> V["Frozen Qwen2.5-VL-3B"]
+    V --> A["A/B/C/D token scoring"]
+    A --> L["Locked answer"]
+    L --> R["Rationale candidates"]
+    G --> F["Question-guided entity crop"]
+    R --> S["Full-view + focus-view scoring"]
+    F --> S
+    S --> X["5 probability + margin features"]
+    X --> C["Standardized logistic ranker"]
+    C --> O["Selected rationale"]
+```
+
+</details>
+
+### **Tech Stack**
+
+Python • PyTorch • Hugging Face Transformers • Qwen2.5-VL • bitsandbytes (4-bit NF4) • scikit-learn • Gradio • Google Colab (Tesla T4)
+
+Built for **AIMS-DTU Recruitment, Round 2**.
+
+**Repository:** [GROVE-VCR](https://github.com/ShubhiDixit09/updated_VCR_AIMS_R2)
+
 ---
 
 ## **JeevanMesh — Self-Healing Disaster-Response Drone Swarm**
